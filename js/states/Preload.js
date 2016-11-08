@@ -21,7 +21,7 @@ MrHop.PreloadState = {
     this.load.audio('coinSound', ['assets/audio/coin.ogg', 'assets/audio/coin.mp3']);
     this.load.audio('jumpSound', ['assets/audio/phaseJump2.mp3'], ['assets/audio/phaseJump2.ogg']);
     this.load.audio('deathSound', ['assets/audio/phaserDown3.mp3'], ['assets/audio/phaserDown3.ogg']);
-    this.load.audio('jumpSound2', ['assets/audio/phaserjump.mp3'], ['assets/audio/phaserjump.ogg']);
+    this.load.audio('jumpSound2', ['assets/audio/phaserjump.mp3'], ['assets/audio/phaseJump.ogg']);
     this.load.audio('soundtrack', ['assets/audio/soundtrack.mp3'], ['assets/audio/soundtrack.ogg']);
 
   },

@@ -8,7 +8,7 @@ MrHop.HomeState = {
     this.cursors = this.game.input.keyboard.createCursorKeys();
     this.background = this.game.add.sprite(0,0, 'background');
     this.background.inputEnabled = true;
-    this.background.scale.setTo(0.47);
+    this.background.scale.setTo(0.55, 0.4);
     // starts the game when clicked
     var style = {font: '32px Arial', fill: '#260404'};
     // Adds the text for the homepage

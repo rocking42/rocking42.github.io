@@ -65,7 +65,7 @@ MrHop.GameState = {
 
 
     // hard code first platform
-    this.current_platform = new MrHop.Platform(this.game, this.floorPool, 12, 0, 280, this.levelSpeed);
+    this.current_platform = new MrHop.Platform(this.game, this.floorPool, 14, 0, 280, this.levelSpeed);
     // create a pool of platforms and add those platforms to the group
     this.platformPool1.add(this.background);
     this.platformPool1.add(this.water);
@@ -73,7 +73,7 @@ MrHop.GameState = {
     this.platformPool1.add(this.current_platform);
 
 
-    this.current_platformI1 = new MrHop.PlatformInverse(this.game,this.floorPool2, 12, 0, 40, this.levelSpeed);
+    this.current_platformI1 = new MrHop.PlatformInverse(this.game,this.floorPool2, 14, 0, 40, this.levelSpeed);
     this.platformPool2.add(this.current_platformI1);
     // call the function which randomises tile generation
     this.loadLevel();
@@ -83,6 +83,7 @@ MrHop.GameState = {
   },
 
   update: function() {
+    this.levelSpeed += 0.1;
 
     this.timer+= this.game.time.elapsed / 700;
     console.log(this.timer);
@@ -186,7 +187,7 @@ MrHop.GameState = {
   player2Jump: function() {
     if(this.player2.body.touching.up) {
       console.log("down");
-      this.jump2.play();
+      this.jump.play();
       // starting point of the jump
       this.startJumpY = this.player2.y;
       // keep track of the fact it is jumping

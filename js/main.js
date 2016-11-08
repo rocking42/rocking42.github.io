@@ -1,6 +1,6 @@
 var MrHop = MrHop || {};
 
-MrHop.game = new Phaser.Game(480, 320, Phaser.CANVAS);
+MrHop.game = new Phaser.Game(560, 320, Phaser.CANVAS);
 
 MrHop.game.state.add('Boot', MrHop.BootState);
 MrHop.game.state.add('Preload', MrHop.PreloadState);
